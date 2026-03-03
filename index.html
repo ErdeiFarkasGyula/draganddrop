@@ -8,6 +8,28 @@
     <title>Drag and Drop</title>
 </head>
 <body>
-    
+    <div id="gameArea">
+        <div id="trash" draggable="true">szemet tema</div>
+        <div class="bins">
+            <div class="bin" id="paper-bin" data-type="paper">
+                <span class="count">papir</span>
+            </div>
+            <div class="bin" id="plastic-bin" data-type="plastic">
+                <span class="count">műanyag</span>
+            </div>
+            <div class="bin" id="metal-bin" data-type="metal">
+                <span class="count">fém</span>
+            </div>
+            <div class="bin" id="mixed-bin" data-type="mixed">
+                <span class="count">vegyes</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="info">
+        <p>Pontszám: <span id="score">0</span></p>
+        <p>Hibák száma: <span id="errors">0</span></p>
+        <p>Idő: <span id="time">60</span></p>
+    </div>
 </body>
 </html>
